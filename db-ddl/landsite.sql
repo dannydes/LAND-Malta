@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 29, 2014 at 03:02 PM
+-- Generation Time: Sep 29, 2014 at 03:55 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=133 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=144 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -157,8 +157,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (38, 'gmt_offset', '0', 'yes'),
 (39, 'default_email_category', '1', 'yes'),
 (40, 'recently_edited', '', 'no'),
-(41, 'template', 'twentyfourteen', 'yes'),
-(42, 'stylesheet', 'twentyfourteen', 'yes'),
+(41, 'template', 'bootpress', 'yes'),
+(42, 'stylesheet', 'bootpress', 'yes'),
 (43, 'comment_whitelist', '1', 'yes'),
 (44, 'blacklist_keys', '', 'no'),
 (45, 'comment_registration', '0', 'yes'),
@@ -211,14 +211,11 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (92, 'widget_recent-comments', 'a:2:{i:2;a:2:{s:5:"title";s:0:"";s:6:"number";i:5;}s:12:"_multiwidget";i:1;}', 'yes'),
 (93, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (94, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
-(95, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}s:13:"array_version";i:3;}', 'yes'),
+(95, 'sidebars_widgets', 'a:3:{s:19:"wp_inactive_widgets";a:0:{}s:13:"right-sidebar";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:13:"array_version";i:3;}', 'yes'),
 (96, 'cron', 'a:5:{i:1412017740;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1412037192;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1412081169;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1412081265;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(98, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.0.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.0.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.0-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.0-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.0";s:7:"version";s:3:"4.0";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1411994000;s:15:"version_checked";s:3:"4.0";s:12:"translations";a:0:{}}', 'yes'),
-(100, '_transient_random_seed', '329c079eb21ad23f0b188309e49dc650', 'yes'),
-(101, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1411994006;s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.0.2";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.2.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'yes'),
-(102, '_site_transient_timeout_theme_roots', '1411995802', 'yes'),
-(103, '_site_transient_theme_roots', 'a:3:{s:14:"twentyfourteen";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";}', 'yes'),
-(104, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1411994008;s:7:"checked";a:3:{s:14:"twentyfourteen";s:3:"1.2";s:14:"twentythirteen";s:3:"1.3";s:12:"twentytwelve";s:3:"1.5";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
+(98, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-4.0.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-4.0.zip";s:10:"no_content";s:68:"https://downloads.wordpress.org/release/wordpress-4.0-no-content.zip";s:11:"new_bundled";s:69:"https://downloads.wordpress.org/release/wordpress-4.0-new-bundled.zip";s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"4.0";s:7:"version";s:3:"4.0";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1411998728;s:15:"version_checked";s:3:"4.0";s:12:"translations";a:0:{}}', 'yes'),
+(100, '_transient_random_seed', '80461f3e4e0ff43ce8ef9ce936329a8e', 'yes'),
+(101, '_site_transient_update_plugins', 'O:8:"stdClass":4:{s:12:"last_checked";i:1411998729;s:8:"response";a:0:{}s:12:"translations";a:0:{}s:9:"no_update";a:2:{s:19:"akismet/akismet.php";O:8:"stdClass":6:{s:2:"id";s:2:"15";s:4:"slug";s:7:"akismet";s:6:"plugin";s:19:"akismet/akismet.php";s:11:"new_version";s:5:"3.0.2";s:3:"url";s:38:"https://wordpress.org/plugins/akismet/";s:7:"package";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.2.zip";}s:9:"hello.php";O:8:"stdClass":6:{s:2:"id";s:4:"3564";s:4:"slug";s:11:"hello-dolly";s:6:"plugin";s:9:"hello.php";s:11:"new_version";s:3:"1.6";s:3:"url";s:42:"https://wordpress.org/plugins/hello-dolly/";s:7:"package";s:58:"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip";}}}', 'yes'),
 (107, '_site_transient_timeout_browser_8f41509d15626085a18ea6bc87ca1310', '1412598804', 'yes'),
 (108, '_site_transient_browser_8f41509d15626085a18ea6bc87ca1310', 'a:9:{s:8:"platform";s:7:"Windows";s:4:"name";s:7:"Firefox";s:7:"version";s:4:"35.0";s:10:"update_url";s:23:"http://www.firefox.com/";s:7:"img_src";s:50:"http://s.wordpress.org/images/browsers/firefox.png";s:11:"img_src_ssl";s:49:"https://wordpress.org/images/browsers/firefox.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (109, 'can_compress_scripts', '1', 'yes'),
@@ -242,8 +239,17 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (125, '_transient_plugin_slugs', 'a:2:{i:0;s:19:"akismet/akismet.php";i:1;s:9:"hello.php";}', 'no'),
 (127, '_transient_timeout_dash_4077549d03da2e451c8b5f002294ff51', '1412037215', 'no'),
 (128, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2014/09/benny/''>WordPress 4.0 “Benny”</a> <span class="rss-date">September 4, 2014</span><div class="rssSummary">Version 4.0 of WordPress, named “Benny” in honor of jazz clarinetist and bandleader Benny Goodman, is available for download or update in your WordPress dashboard. While 4.0 is just another number for us after 3.9 and before 4.1, we feel we’ve put a little extra polish into it. This release brings you a smoother writing and management experience [&hellip;]</div></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://lorelle.wordpress.com/2014/09/29/research-on-the-wordpress-web-development-and-web-design-job-market/''>Lorelle on WP: Research on the WordPress, Web Development, and Web Design Job Market</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/meet-john-blackbourn-wordpress-4-1-release-lead''>WPTavern: Meet John Blackbourn, WordPress 4.1 Release Lead</a></li><li><a class=''rsswidget'' href=''http://ma.tt/2014/09/4-0-recap/''>Matt: 4.0 Recap</a></li></ul></div><div class="rss-widget"><ul><li class=''dashboard-news-plugin''><span>Popular Plugin:</span> <a href=''https://wordpress.org/plugins/woocommerce/'' class=''dashboard-news-plugin-link''>WooCommerce - excelling eCommerce</a>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=woocommerce&amp;_wpnonce=5530fb557c&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''WooCommerce - excelling eCommerce''>Install</a>)</span></li></ul></div>', 'no'),
-(130, 'theme_mods_twentyfourteen', 'a:1:{s:18:"nav_menu_locations";a:0:{}}', 'yes'),
-(132, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes');
+(130, 'theme_mods_twentyfourteen', 'a:2:{s:18:"nav_menu_locations";a:0:{}s:16:"sidebars_widgets";a:2:{s:4:"time";i:1411998741;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
+(132, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
+(135, '_transient_twentyfourteen_category_count', '1', 'yes'),
+(136, '_site_transient_timeout_theme_roots', '1412000531', 'yes'),
+(137, '_site_transient_theme_roots', 'a:4:{s:9:"bootpress";s:7:"/themes";s:14:"twentyfourteen";s:7:"/themes";s:14:"twentythirteen";s:7:"/themes";s:12:"twentytwelve";s:7:"/themes";}', 'yes'),
+(138, '_site_transient_timeout_wporg_theme_feature_list', '1412009499', 'yes'),
+(139, '_site_transient_wporg_theme_feature_list', 'a:4:{s:6:"Colors";a:15:{i:0;s:5:"black";i:1;s:4:"blue";i:2;s:5:"brown";i:3;s:4:"gray";i:4;s:5:"green";i:5;s:6:"orange";i:6;s:4:"pink";i:7;s:6:"purple";i:8;s:3:"red";i:9;s:6:"silver";i:10;s:3:"tan";i:11;s:5:"white";i:12;s:6:"yellow";i:13;s:4:"dark";i:14;s:5:"light";}s:6:"Layout";a:9:{i:0;s:12:"fixed-layout";i:1;s:12:"fluid-layout";i:2;s:17:"responsive-layout";i:3;s:10:"one-column";i:4;s:11:"two-columns";i:5;s:13:"three-columns";i:6;s:12:"four-columns";i:7;s:12:"left-sidebar";i:8;s:13:"right-sidebar";}s:8:"Features";a:20:{i:0;s:19:"accessibility-ready";i:1;s:8:"blavatar";i:2;s:10:"buddypress";i:3;s:17:"custom-background";i:4;s:13:"custom-colors";i:5;s:13:"custom-header";i:6;s:11:"custom-menu";i:7;s:12:"editor-style";i:8;s:21:"featured-image-header";i:9;s:15:"featured-images";i:10;s:15:"flexible-header";i:11;s:20:"front-page-post-form";i:12;s:19:"full-width-template";i:13;s:12:"microformats";i:14;s:12:"post-formats";i:15;s:20:"rtl-language-support";i:16;s:11:"sticky-post";i:17;s:13:"theme-options";i:18;s:17:"threaded-comments";i:19;s:17:"translation-ready";}s:7:"Subject";a:3:{i:0;s:7:"holiday";i:1;s:13:"photoblogging";i:2;s:8:"seasonal";}}', 'yes'),
+(140, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1411998741;s:7:"checked";a:4:{s:9:"bootpress";s:3:"1.3";s:14:"twentyfourteen";s:3:"1.2";s:14:"twentythirteen";s:3:"1.3";s:12:"twentytwelve";s:3:"1.5";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
+(141, 'current_theme', 'Bootpress', 'yes'),
+(142, 'theme_mods_bootpress', 'a:2:{i:0;b:0;s:18:"nav_menu_locations";a:1:{s:7:"primary";i:2;}}', 'yes'),
+(143, 'theme_switched', '', 'yes');
 
 -- --------------------------------------------------------
 
@@ -259,7 +265,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=125 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=124 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -338,7 +344,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (76, 22, '_edit_lock', '1411995253:1'),
 (77, 24, '_edit_last', '1'),
 (78, 24, '_wp_page_template', 'default'),
-(79, 24, '_edit_lock', '1411995408:1'),
+(79, 24, '_edit_lock', '1411995678:1'),
 (80, 26, '_menu_item_type', 'post_type'),
 (81, 26, '_menu_item_menu_item_parent', '11'),
 (82, 26, '_menu_item_object_id', '24'),
@@ -427,18 +433,18 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (3, 1, '2014-09-29 12:33:25', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-09-29 12:33:25', '0000-00-00 00:00:00', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=3', 0, 'post', '', 0),
 (4, 1, '2014-09-29 12:48:00', '2014-09-29 12:48:00', '', 'Volunteers', '', 'publish', 'open', 'open', '', 'volunteers', '', '', '2014-09-29 12:48:00', '2014-09-29 12:48:00', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=4', 0, 'page', '', 0),
 (5, 1, '2014-09-29 12:48:00', '2014-09-29 12:48:00', '', 'Volunteers', '', 'inherit', 'open', 'open', '', '4-revision-v1', '', '', '2014-09-29 12:48:00', '2014-09-29 12:48:00', '', 4, 'http://localhost/landsite/LAND-Malta/webroot/?p=5', 0, 'revision', '', 0),
-(6, 1, '2014-09-29 12:49:07', '2014-09-29 12:49:07', ' ', '', '', 'publish', 'open', 'open', '', '6', '', '', '2014-09-29 13:01:03', '2014-09-29 13:01:03', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=6', 1, 'nav_menu_item', '', 0),
+(6, 1, '2014-09-29 12:49:07', '2014-09-29 12:49:07', ' ', '', '', 'publish', 'open', 'open', '', '6', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=6', 1, 'nav_menu_item', '', 0),
 (7, 1, '2014-09-29 12:48:51', '2014-09-29 12:48:51', '', 'Donations', '', 'publish', 'open', 'open', '', 'donations', '', '', '2014-09-29 12:48:51', '2014-09-29 12:48:51', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=7', 0, 'page', '', 0),
 (8, 1, '2014-09-29 12:48:51', '2014-09-29 12:48:51', '', 'Donations', '', 'inherit', 'open', 'open', '', '7-revision-v1', '', '', '2014-09-29 12:48:51', '2014-09-29 12:48:51', '', 7, 'http://localhost/landsite/LAND-Malta/webroot/?p=8', 0, 'revision', '', 0),
-(9, 1, '2014-09-29 12:49:28', '2014-09-29 12:49:28', ' ', '', '', 'publish', 'open', 'open', '', '9', '', '', '2014-09-29 13:01:03', '2014-09-29 13:01:03', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=9', 2, 'nav_menu_item', '', 0),
-(10, 1, '2014-09-29 12:50:15', '2014-09-29 12:50:15', '', 'About Disability', '', 'publish', 'open', 'open', '', 'about-disability', '', '', '2014-09-29 13:01:03', '2014-09-29 13:01:03', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=10', 3, 'nav_menu_item', '', 0),
-(11, 1, '2014-09-29 12:50:16', '2014-09-29 12:50:16', '', 'About Us', '', 'publish', 'open', 'open', '', 'about-us', '', '', '2014-09-29 13:01:03', '2014-09-29 13:01:03', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=11', 6, 'nav_menu_item', '', 0),
+(9, 1, '2014-09-29 12:49:28', '2014-09-29 12:49:28', ' ', '', '', 'publish', 'open', 'open', '', '9', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=9', 2, 'nav_menu_item', '', 0),
+(10, 1, '2014-09-29 12:50:15', '2014-09-29 12:50:15', '', 'About Disability', '', 'publish', 'open', 'open', '', 'about-disability', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=10', 3, 'nav_menu_item', '', 0),
+(11, 1, '2014-09-29 12:50:16', '2014-09-29 12:50:16', '', 'About Us', '', 'publish', 'open', 'open', '', 'about-us', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=11', 6, 'nav_menu_item', '', 0),
 (12, 1, '2014-09-29 12:53:37', '2014-09-29 12:53:37', '', 'Independant Living Concept', '', 'publish', 'open', 'open', '', 'independant-living-concept', '', '', '2014-09-29 12:53:37', '2014-09-29 12:53:37', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=12', 0, 'page', '', 0),
 (13, 1, '2014-09-29 12:53:37', '2014-09-29 12:53:37', '', 'Independant Living Concept', '', 'inherit', 'open', 'open', '', '12-revision-v1', '', '', '2014-09-29 12:53:37', '2014-09-29 12:53:37', '', 12, 'http://localhost/landsite/LAND-Malta/webroot/?p=13', 0, 'revision', '', 0),
 (14, 1, '2014-09-29 12:54:07', '2014-09-29 12:54:07', '', 'Definition of Disability', '', 'publish', 'open', 'open', '', 'definition-of-disability', '', '', '2014-09-29 12:54:07', '2014-09-29 12:54:07', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=14', 0, 'page', '', 0),
 (15, 1, '2014-09-29 12:54:07', '2014-09-29 12:54:07', '', 'Definition of Disability', '', 'inherit', 'open', 'open', '', '14-revision-v1', '', '', '2014-09-29 12:54:07', '2014-09-29 12:54:07', '', 14, 'http://localhost/landsite/LAND-Malta/webroot/?p=15', 0, 'revision', '', 0),
-(16, 1, '2014-09-29 12:57:04', '2014-09-29 12:57:04', ' ', '', '', 'publish', 'open', 'open', '', '16', '', '', '2014-09-29 13:01:03', '2014-09-29 13:01:03', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=16', 4, 'nav_menu_item', '', 0),
-(17, 1, '2014-09-29 12:57:04', '2014-09-29 12:57:04', ' ', '', '', 'publish', 'open', 'open', '', '17', '', '', '2014-09-29 13:01:03', '2014-09-29 13:01:03', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=17', 5, 'nav_menu_item', '', 0),
+(16, 1, '2014-09-29 12:57:04', '2014-09-29 12:57:04', ' ', '', '', 'publish', 'open', 'open', '', '16', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=16', 4, 'nav_menu_item', '', 0),
+(17, 1, '2014-09-29 12:57:04', '2014-09-29 12:57:04', ' ', '', '', 'publish', 'open', 'open', '', '17', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=17', 5, 'nav_menu_item', '', 0),
 (18, 1, '2014-09-29 12:55:14', '2014-09-29 12:55:14', '', 'History of LAND', '', 'publish', 'open', 'open', '', 'history-of-land', '', '', '2014-09-29 12:55:14', '2014-09-29 12:55:14', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=18', 0, 'page', '', 0),
 (19, 1, '2014-09-29 12:55:14', '2014-09-29 12:55:14', '', 'History of LAND', '', 'inherit', 'open', 'open', '', '18-revision-v1', '', '', '2014-09-29 12:55:14', '2014-09-29 12:55:14', '', 18, 'http://localhost/landsite/LAND-Malta/webroot/?p=19', 0, 'revision', '', 0),
 (20, 1, '2014-09-29 12:55:37', '2014-09-29 12:55:37', '', 'Get to know us', '', 'publish', 'open', 'open', '', 'get-to-know-us', '', '', '2014-09-29 12:55:37', '2014-09-29 12:55:37', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=20', 0, 'page', '', 0),
@@ -447,11 +453,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (23, 1, '2014-09-29 12:56:01', '2014-09-29 12:56:01', '', 'Photo Gallery', '', 'inherit', 'open', 'open', '', '22-revision-v1', '', '', '2014-09-29 12:56:01', '2014-09-29 12:56:01', '', 22, 'http://localhost/landsite/LAND-Malta/webroot/?p=23', 0, 'revision', '', 0),
 (24, 1, '2014-09-29 12:56:46', '2014-09-29 12:56:46', '', 'Join us', '', 'publish', 'open', 'open', '', 'join-us', '', '', '2014-09-29 12:56:46', '2014-09-29 12:56:46', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?page_id=24', 0, 'page', '', 0),
 (25, 1, '2014-09-29 12:56:46', '2014-09-29 12:56:46', '', 'Join us', '', 'inherit', 'open', 'open', '', '24-revision-v1', '', '', '2014-09-29 12:56:46', '2014-09-29 12:56:46', '', 24, 'http://localhost/landsite/LAND-Malta/webroot/?p=25', 0, 'revision', '', 0),
-(26, 1, '2014-09-29 13:01:05', '2014-09-29 13:01:05', ' ', '', '', 'publish', 'open', 'open', '', '26', '', '', '2014-09-29 13:01:05', '2014-09-29 13:01:05', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=26', 11, 'nav_menu_item', '', 0),
-(27, 1, '2014-09-29 13:01:05', '2014-09-29 13:01:05', ' ', '', '', 'publish', 'open', 'open', '', '27', '', '', '2014-09-29 13:01:05', '2014-09-29 13:01:05', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=27', 10, 'nav_menu_item', '', 0),
-(28, 1, '2014-09-29 13:01:04', '2014-09-29 13:01:04', ' ', '', '', 'publish', 'open', 'open', '', '28', '', '', '2014-09-29 13:01:04', '2014-09-29 13:01:04', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=28', 9, 'nav_menu_item', '', 0),
-(29, 1, '2014-09-29 13:01:04', '2014-09-29 13:01:04', ' ', '', '', 'publish', 'open', 'open', '', '29', '', '', '2014-09-29 13:01:04', '2014-09-29 13:01:04', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=29', 8, 'nav_menu_item', '', 0),
-(30, 1, '2014-09-29 13:01:04', '2014-09-29 13:01:04', '', 'Facebook', '', 'publish', 'open', 'open', '', 'facebook', '', '', '2014-09-29 13:01:04', '2014-09-29 13:01:04', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=30', 7, 'nav_menu_item', '', 0);
+(26, 1, '2014-09-29 13:01:05', '2014-09-29 13:01:05', ' ', '', '', 'publish', 'open', 'open', '', '26', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=26', 11, 'nav_menu_item', '', 0),
+(27, 1, '2014-09-29 13:01:05', '2014-09-29 13:01:05', ' ', '', '', 'publish', 'open', 'open', '', '27', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=27', 10, 'nav_menu_item', '', 0),
+(28, 1, '2014-09-29 13:01:04', '2014-09-29 13:01:04', ' ', '', '', 'publish', 'open', 'open', '', '28', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=28', 9, 'nav_menu_item', '', 0),
+(29, 1, '2014-09-29 13:01:04', '2014-09-29 13:01:04', ' ', '', '', 'publish', 'open', 'open', '', '29', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=29', 8, 'nav_menu_item', '', 0),
+(30, 1, '2014-09-29 13:01:04', '2014-09-29 13:01:04', '', 'Facebook', '', 'publish', 'open', 'open', '', 'facebook', '', '', '2014-09-29 13:52:56', '2014-09-29 13:52:56', '', 0, 'http://localhost/landsite/LAND-Malta/webroot/?p=30', 7, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -569,7 +575,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', 'wp350_media,wp360_revisions,wp360_locks,wp390_widgets'),
 (13, 1, 'show_welcome_panel', '1'),
-(14, 1, 'session_tokens', 'a:1:{s:64:"423b3774481b9c86d8ac6376d206236ee3a6673c0b094a45b4498afc8c547f50";i:1412166800;}'),
+(14, 1, 'session_tokens', 'a:2:{s:64:"423b3774481b9c86d8ac6376d206236ee3a6673c0b094a45b4498afc8c547f50";i:1412166800;s:64:"1d9aced53e72bad1c601f190f63798f0d86d131aa3fb72bc48928008f28e962f";i:1412171390;}'),
 (15, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (16, 1, 'managenav-menuscolumnshidden', 'a:4:{i:0;s:11:"link-target";i:1;s:11:"css-classes";i:2;s:3:"xfn";i:3;s:11:"description";}'),
 (17, 1, 'metaboxhidden_nav-menus', 'a:3:{i:0;s:8:"add-post";i:1;s:12:"add-post_tag";i:2;s:15:"add-post_format";}'),
